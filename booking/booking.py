@@ -51,7 +51,7 @@ class BookingServicer(booking_pb2_grpc.BookingServicer):
                 # As of now we assume the userid is valid
                 self.db.append(
                     {
-                        "userid": userid,
+                        "userid": request.userid,
                         "dates": [{"date": request.date, "movies": [request.movieid]}],
                     }
                 )
