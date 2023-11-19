@@ -1,6 +1,12 @@
 import json
 
 
+def get_all_movies(_, info):
+    with open("{}/data/movies.json".format("."), "r") as file:
+        movies = json.load(file)
+        return movies["movies"]
+
+
 def movie_with_id(_, info, _id):
     with open("{}/data/movies.json".format("."), "r") as file:
         movies = json.load(file)
