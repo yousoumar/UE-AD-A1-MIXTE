@@ -1,4 +1,6 @@
-# UE-AD-A1-MIXTE## Overview
+# UE-AD-A1-MIXTE
+
+## Overview
 
 As part of our Distributed System course at IMT Atlantique, this project is about the implementation of REST, gRPC, and GraphQL APIs in the context of a movie booking system with 4 microservices.
 
