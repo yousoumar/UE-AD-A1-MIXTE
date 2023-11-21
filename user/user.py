@@ -39,7 +39,7 @@ def get_user_by_id(userid):
 
 @app.route("/users/<userid>/bookings", methods=["GET"])
 def get_user_bookings(userid):
-    bookings = []
+    booking = {}
     returnedBooking = {}
     with grpc.insecure_channel("booking:3201") as channel:
         stub = booking_pb2_grpc.BookingStub(channel)

@@ -16,4 +16,6 @@ You should have Docker and Docker Compose installed. After that, it's as simple 
 docker-compose up --build
 ```
 
+You can import the `postman.json` file in the project root in [Postman](https://www.postman.com) to have `user` service routes ready to use.
+
 The user service can be accessed on `http://localhost:3203`, the showtime on `http://localhost:3202`, the booking on `http://localhost:3201`, and the movie on `http://localhost:3200`.
