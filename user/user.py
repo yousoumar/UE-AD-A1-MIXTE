@@ -71,7 +71,7 @@ def get_user_bookings(userid):
             {"date": date_item.date, "movies": mapped_movies}
         )
 
-    return make_response(jsonify(returnedBooking), 2000)
+    return make_response(jsonify(returnedBooking), 200)
 
 
 @app.route("/users/<userid>/bookings", methods=["POST"])

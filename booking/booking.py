@@ -23,7 +23,7 @@ class BookingServicer(booking_pb2_grpc.BookingServicer):
         schedule = []
         with grpc.insecure_channel("showtime:3202") as channel:
             stub = showtime_pb2_grpc.ShowtimeStub(channel)
-            schedule = stub.GetShwotime(showtime_pb2.Empty()).schedule
+            schedule = stub.GetShowtime(showtime_pb2.Empty()).schedule
 
         for schedule_item in schedule:
             if (
