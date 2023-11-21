@@ -10,7 +10,7 @@ class ShowtimeServicer(showtime_pb2_grpc.ShowtimeServicer):
         with open("{}/data/times.json".format("."), "r") as jsf:
             self.db = json.load(jsf)["schedule"]
 
-    def GetShwotime(self, request, context):
+    def GetShowtime(self, request, context):
         return showtime_pb2.ShowtimeList(schedule=self.db)
 
 

@@ -24,6 +24,7 @@ actor = ObjectType("Actor")
 
 mutation.set_field("update_movie_rate", r.update_movie_rate)
 query.set_field("movie_with_id", r.movie_with_id)
+query.set_field("actor_with_id", r.actor_with_id)
 query.set_field("get_all_movies", r.get_all_movies)
 movie.set_field("actors", r.resolve_actors_in_movie)
 
