@@ -1,0 +1,55 @@
+{
+  "info": {
+    "_postman_id": "a1f9c531-921b-4cba-af92-2a2b90f5f8b4",
+    "name": "UE-AD-A1-MIXTE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "18037196"
+  },
+  "item": [
+    {
+      "name": "Get all users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3203/users"
+      },
+      "response": []
+    },
+    {
+      "name": "Book a movie on a date for a user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"date\": \"20151201\",\n   \"movieid\": \"a8034f44-aee4-44cf-b32c-74cf452aaaae\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3203/users/chris_rivers/bookings"
+      },
+      "response": []
+    },
+    {
+      "name": "Get a user by its id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3203/users/chris_rivers"
+      },
+      "response": []
+    },
+    {
+      "name": "Get the bookings of a user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3203/users/chris_rivers/bookings"
+      },
+      "response": []
+    }
+  ]
+}
